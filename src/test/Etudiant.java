@@ -26,6 +26,11 @@ public class Etudiant {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
+
+
+	public String toString() {
+		return "Etudiant [nom=" + nom + ", prenom=" + prenom + "]";
+	}
 	
 	
 	
