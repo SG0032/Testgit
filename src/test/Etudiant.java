@@ -5,7 +5,15 @@ public class Etudiant {
 
 	private String nom;
 	private String prenom;
+	private int age;
 	
+	
+	public Etudiant(String nom, String prenom, int age) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.age = age;
+	}
+
 	public Etudiant(String nom, String prenom) {
 		this.nom = nom;
 		this.prenom = prenom;
@@ -27,11 +35,21 @@ public class Etudiant {
 		this.prenom = prenom;
 	}
 
-
-	public String toString() {
-		return "Etudiant [nom=" + nom + ", prenom=" + prenom + "]";
+	public int getAge() {
+		return age;
 	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
 	
+	public String toString() {
+		return "Etudiant [nom=" + nom + ", prenom=" + prenom + ", age=" + age + "]";
+	}
+
+
 	
+
 	
 	}
